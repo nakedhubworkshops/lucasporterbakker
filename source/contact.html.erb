@@ -1,0 +1,60 @@
+---
+title: Contact | Lucas Porter-Bakker
+---
+
+<div class="menu-icon">
+	<span class="menu-icon__line menu-icon__line-left"></span>
+	<span class="menu-icon__line"></span>
+	<span class="menu-icon__line menu-icon__line-right"></span>
+</div>
+
+<div class="contact-nav">
+	<div class="contact-nav__content">
+		<ul class="contact-nav__list">
+      <li class="contact-nav__list-item"><a href="https://github.com/lucasporterbakker" target ="_blank"><i class="fa fa-github"></i></a></li>
+      <li class="contact-nav__list-item"><a href="https://www.linkedin.com/in/lucasporterbakker" target ="_blank"><i class="fa fa-linkedin"></i></a></li>
+      <li class="contact-nav__list-item"><a href="portfolio.html"><i class="fa fa-wechat"></i></a></li>
+      <li class="contact-nav__list-item"><a href="contact.html"><i class="fa fa-instagram"></i></a></li>
+      <li class="contact-nav__list-item"><a href="https://angel.co/lucasporterbakker" target ="_blank"><i class="fa fa-angellist"></i></a></li>
+      <li class="contact-nav__list-item"><a href="contact.html"><i class="fa fa-twitter"></i></a></li>
+      <li class="contact-nav__list-item"><a href="mailto:www.lucas.porter.bakker@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      <!-- <br>
+      <li class="contact-nav__list-item"><a href="index.html">Home</a></li> -->
+    </ul>
+	</div>
+</div>
+
+<div class="site-content">
+	<h1 class="site-content__headline">Contact</h1>
+</div>
+
+<script type="text/javascript">
+console.clear();
+
+const app = (() => {
+  let body;
+  let menu;
+  let menuItems;
+
+  const init = () => {
+    body = document.querySelector('body');
+    menu = document.querySelector('.menu-icon');
+    menuItems = document.querySelectorAll('.contact-nav__list-item');
+
+    applyListeners();
+  }
+
+  const applyListeners = () => {
+    menu.addEventListener('click', () => toggleClass(body, 'contact-nav-active'));
+  }
+
+  const toggleClass = (element, stringClass) => {
+    if(element.classList.contains(stringClass))
+    element.classList.remove(stringClass);
+    else
+    element.classList.add(stringClass);
+  }
+
+  init();
+})();
+</script>
